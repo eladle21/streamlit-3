@@ -3,10 +3,9 @@ import pandas as pd
 import plotly.express as px
 
 # Load dataset
-file_path = 'player_avg_df.csv'  # Update this path as necessary
+file_path = 'player_avg_df.csv'
 data = pd.read_csv(file_path)
 
-# Drop PLAYER_ID column
 if 'PLAYER_ID' in data.columns:
     data = data.drop(columns=['PLAYER_ID'])
 
